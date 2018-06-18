@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soccer Manager</title>
+<link rel="icon" href="images/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+<script src="js/jquery-2.1.1.min.js"></script>
+<script language="javascript">
+
+	$(document).ready(function() {
+		
+		$("#jugadores").click(function() {
+				
+			window.location = "plantilla.php";
+			
+		});
+    });
+	
+</script>
+</head>
+
+<body>
+	<div id="nav_top">
+    	<table>
+        	<tr>
+            	<td>
+        			<a href="index.html"><img id="logo" src="images/logo.png" alt="logo" /></a>
+        		</td>
+               	<td id="user">
+                	<a href="new_user.html"><img src="images/new_user.png" class="iconoXL" alt="nuevo usuario" /></a>
+                    <a class="green" href="new_user.html">nuevo usuario</a>
+                    <a href="login.html"><img src="images/login.png" class="iconoXL" alt="entrar" /></a>
+                    <a class="blue" href="login.html">entrar</a>
+				</td>
+         	</tr>
+       	</table>
+    </div>
+    <div id="nav">
+        <table>
+            <tr>
+                <td id="jugadores">
+                   plantilla
+                </td>
+                <td id="estrategias">
+                    estrategia
+                </td>
+                <td id="entrenamientos">
+                	entrenamiento
+                </td>
+                <td id="traspasos">
+                    traspasos
+                </td>
+                <td id="finanzas">
+                	finanzas
+                </td>
+            </tr>
+        </table>
+   	</div>
+  	<div class="content">
+        <form name="new_user" id="new_user" action="new_user.php"  method="post">
+        <table>
+            <tr style="height:25%;">
+                <td colspan="4" class="title">Crea un nuevo usuario</td>
+            </tr>
+            <tr style="height:25%;">
+                <td class="label left" style="width:25%;">
+                	<label for="username">Nombre de usuario</label>
+                </td>
+                <td style="width:25%;">
+                    <input type="text" name="username" id="username" pattern="[a-zA-z0-9_-]{6,20}" required />
+                </td>
+                <td class="label left" style="width:25%;">
+                	<label for="email">Correo electrónico</label>
+                </td>
+                <td style="width:25%;">
+                    <input type="email" name="email" id="email" required />
+                </td>
+            </tr>
+            <tr style="height:25%;">
+                <td class="label left" style="width:25%;">
+                	<label for="pass">Password</label>
+                </td>
+                <td style="width:25%;">
+                    <input type="password" name="pass" id="pass" pattern=".{8,}" required />
+                </td>
+                <td class="label left" style="width:25%;">
+                	<label for="pass_repeat">Repetir password</label>
+                </td>
+                <td style="width:25%;">
+                    <input type="password" name="pass_repeat" id="pass_repeat" pattern=".{8,}" required />
+                </td>
+            </tr>
+            <tr style="height:25%;">
+                <td class="label left" style="width:25%;">
+                	<label for="fecha">Fecha de nacimiento</label>
+                </td>
+                <td style="width:25%;">
+                    <input type="date" name="fecha" id="fecha" min="1950-01-01" />
+                </td>
+                <td class="label left" style="width:25%;">
+                	<label for="num_tlf">Teléfono</label>
+                </td>
+                <td style="width:25%;" style="width:25%;">
+                    <input type="text" name="num_tlf" id="num_tlf" placeholder="XXX-XX-XX-XX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" />
+                </td>
+            </tr>
+            <tr style="height:25%;">			
+                <td colspan="4" style="width:50%;">
+                    <input type="submit" value="empezar a jugar" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+    	<table>
+            <tr>
+                <td style="width:10%;">
+                </td>
+                <td style="width:23%;">
+                    <ul>
+                        <li><a href="condiciones.html">Condiciones de uso</a></li>
+                         <li><a href="conducta.html">Código de conducta</a></li>
+                         <li><a href="privacidad.html">Política de privacidad</a></li>
+                         <li><a href="mapa.html">Mapa Web</a></li>
+                         <li><a href="nosotros.html">Sobre nosotros</a></li>
+                         <li><a href="contacto.html">Contáctenos</a></li>
+                    </ul>
+                </td>
+                <td style="width:33%; text-align:center;">
+                    <a href="https://twitter.com" target="new"><img src="images/twitter.png" class="icono" alt="twitter" /></a>
+                    <a href="https://ca-es.facebook.com" target="new"><img src="images/facebook.png" class="icono" alt="facebook" /></a>
+                    <a href="https://myspace.com/" target="new"><img src="images/myspace.png" class="icono" alt="myspace" /></a>
+                </td>
+                <td style="width:33%; text-align:center;">
+                    <img src="images/fifa.png" class="imagen" alt="fifa" />
+                    <img src="images/pegi.jpg" class="imagen" alt="pegi" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="width:100%; text-align:right; font-size:10px;">
+                	Designed and developed by marcasru © 2015-2016 Graphic Resources SL. All rights reserved
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

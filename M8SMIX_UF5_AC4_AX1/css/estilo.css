@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* table, td, div, span {
+	border:1px solid #F00;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Play);
+
+@font-face {
+    font-family:OdinRounded;
+    src:url(../fonts/OdinRounded.otf);
+}
+
+* {
+	margin:0px;
+}
+
+body {
+	background-image:url(../images/background.png);
+	background-position:center;
+}
+
+#nav_top {
+	width:100%;
+	height:70px;
+	background-color:#34495E;
+}
+
+#logo {
+	height:70px;
+	transition:transform 3s ease-in-out 1s;
+}
+
+#logo:hover {
+	transform:rotate(2880deg);
+}
+
+#user {
+	width:45%;
+	height:70px;
+	line-height:70px;
+	vertical-align:middle;
+	text-align:right;
+    font-family:Play;
+	font-size:24px;
+	color:#FFF;
+	padding-right:10px;
+}
+
+#user a{
+	text-decoration:none;
+}
+
+#user a:hover{
+	text-decoration:underline;
+}
+
+div.content {
+	width:80%;
+	margin:4% auto;
+	background-color:#2980B9;
+	border-radius:10px 60px 10px 10px;
+	box-shadow:8px 8px 12px #34495E;
+    font-family:OdinRounded;
+	font-weight:bolder;
+	font-size:20px;
+	color:#2ECC71;
+}
+
+#footer {
+	clear:both;
+	width:100%;
+	height:200px;
+	background-color:#bfbfbf;	
+	color:#ECF0F1;
+}
+
+ul.nav {
+	list-style:none;
+	padding:0px;
+}
+
+#nav table, #nav_top table, #footer table {
+	margin:auto;
+	width:100%;
+	border-spacing:0px;
+}
+
+#nav td {
+	width:20%;
+	height:250px;
+    font-family:Play;
+	font-size:24px;
+	font-weight:bolder;
+	vertical-align:bottom;
+	text-align:center;
+	padding:20px;
+}
+
+ul.nav li img {
+	height:55%;
+	margin:10px auto;
+	display:block;
+}
+
+#jugadores {
+	background-color:#5CB4D6;
+	background-image:url(../images/plantilla.png);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	color:#34495E;
+	transition:all 0.5s linear 0s;
+}
+
+#jugadores:hover {
+	background-image:url(../images/plantilla_hover.png);
+	cursor:pointer;
+	color:#FFF;
+	transform:scale(1.2,1.2) skewX(-3deg);
+}
+
+#estrategias {
+	background-color:#3498DB;
+	background-image:url(../images/estrategia.png);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	color:#34495E;
+	transition:all 0.5s linear 0s;
+}
+
+#estrategias:hover {
+	background-image:url(../images/estrategia_hover.png);
+	cursor:pointer;
+	color:#FFF;
+	transform:scale(1.2,1.2) skewX(-3deg);
+}
+
+#entrenamientos {
+	background-color:#2980B9;
+	background-image:url(../images/entrenamiento.png);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	color:#34495E;
+	transition:all 0.5s linear 0s;
+}
+
+#entrenamientos:hover {
+	background-image:url(../images/entrenamiento_hover.png);
+	cursor:pointer;
+	color:#FFF;
+	transform:scale(1.2,1.2) skewX(-3deg);
+}
+
+#traspasos {
+	background-color:#34495E;
+	background-image:url(../images/traspasos.png);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	color:#2980B9;
+	transition:all 0.5s linear 0s;
+}
+
+#traspasos:hover {
+	background-image:url(../images/traspasos_hover.png);
+	cursor:pointer;
+	color:#FFF;
+	transform:scale(1.2,1.2) skewX(-3deg);
+}
+
+#finanzas {
+	background-color:#2C3E50;
+	background-image:url(../images/finanzas.png);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	color:#2980B9;
+	transition:all 0.5s linear 0s;
+}
+
+#finanzas:hover {
+	background-image:url(../images/finanzas_hover.png);
+	cursor:pointer;
+	color:#FFF;
+	transform:scale(1.2,1.2) skewX(-3deg);
+}
+
+.green {
+	color:#2ECC71;
+}
+
+.blue {
+	color:#3498DB;
+}
+
+div.content table {
+	margin:auto;
+	width:100%;
+	padding:20px;
+	border-spacing:10px;
+}
+
+td.title {
+	width:100%;
+	background-color:#2C3E50;
+	padding:15px;
+	text-align:center;
+	vertical-align:middle;
+    font-family:Play;
+	font-size:46px;
+	color:#FFF;
+	border-radius:10px 40px 10px 10px;
+}
+
+td.content {
+	background-color:#FFF;
+	padding:15px;
+	vertical-align:middle;
+    font-family:Play;
+	font-size:20px;
+	color:#34495E;
+	border:2px solid #34495E;
+}
+
+td.image {
+	text-align:center;
+	vertical-align:middle;
+}	
+
+td.left, img.left {
+	border-radius:10px 0px 0px 10px;
+}
+
+td.right, img.right {
+	border-radius:0px 10px 10px 0px;
+}
+
+td.top, img.top {
+	border-radius:10px 10px 0px 0px;
+	text-align:center;
+}
+
+td.bottom, img.bottom {
+	border-radius:0px 0px 10px 10px;
+	text-align:center;
+}
+
+td.valoracion {
+	font-size:80px;
+}
+
+img.cromo {
+	width:90%;
+	border-top:10px solid #34495E;
+	border-right:10px solid #34495E;
+	border-left:10px solid #34495E;
+	border-bottom:40px solid #34495E;
+	border-radius:5px;
+}
+
+img.chapa {
+	width:90%;
+	border:50px double #34495E;
+	border-radius:360px;
+}
+
+img.bandera {
+	width:30px;
+}
+
+img.icono {
+	height:24px;
+	vertical-align:middle;
+	margin:10px;
+}
+
+img.iconoXL {
+	width:40px;
+	vertical-align:middle;
+	margin:1px;
+}
+
+img.imagen {
+	height:150px;
+	vertical-align:middle;
+	margin:10px;
+}
+
+#footer {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:13px;
+	background-color:#565454;
+	color:#e6e6e6;
+	height:250px;
+	opacity:0.8;
+}
+
+#footer a {
+	text-decoration:none;
+	color:#e6e6e6;
+}
+
+#footer a:hover {
+	color:#2980B9;
+	font-weight:bolder;
+}
+
+#footer ul {
+	list-style-image:url(../images/list.png);
+}
+
+#footer ul li {
+	transition:all 1s ease-in-out 0.2s;
+}
+
+#footer ul li:hover {
+	transform:translateX(30px);
+}
+
+div.valoracion {
+	margin:20px 5px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	border-radius:0px 40px 40px 0px;
+	padding:10px;
+	height:20px;
+	color:#FFF;
+	border:1px solid #FFF;
+	box-shadow:-5px 5px 8px #FFF;
+	text-align:right;
+}
+
+div.ok {
+	background-color:#2ECC71;
+}
+
+div.regular {
+	background-color:#E67E22;
+}
+
+div.ko {
+	background-color:#C0392B;
+}
+/* ------------------------------------------ */
+
+td.label {
+	background-color:#34495E;
+	padding:15px;
+	vertical-align:middle;
+    font-family:OdinRounded;
+	font-weight:bolder;
+	font-size:20px;
+	color:#2ECC71;
+}
+
+input, select, textarea {
+	background-color:#FFF;
+	padding:15px;
+	vertical-align:middle;
+    font-family:OdinRounded;
+	font-size:18px;
+	color:#34495E;
+	border:2px solid #34495E;
+	border-radius:0px 10px 10px 0px;
+	width:85%;
+}
+
+select {
+	width:100%;
+}
+
+textarea {
+	width:96%;
+	height:300px;
+	text-align:justify;
+	border-radius:0px;
+}
+
+input:focus {
+	background-color:#5CB4D6;
+	
+}
+
+input:invalid, select:invalid {
+	border-color:#F1C40F;
+}
+
+input:required, select:required {
+	background-image:url(../images/obligatorio.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width:auto;
+}
+
+input[type="file"] {
+	width:93%;	
+}
+
+input[type="range"] {
+	width:38%;
+	padding:0px;	
+}
+
+input[type="button"], input[type="submit"] {
+	background-color:#34495E;
+	padding:15px;
+	vertical-align:middle;
+    font-family:OdinRounded;
+	font-weight:bolder;
+	font-size:20px;
+	color:#2ECC71;
+	border-radius:10px;
+	width:100%;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+	cursor:pointer;
+	background-color:#5CB4D6;
+	color:#34495E;
+}
+
+progress {
+	width:100%;
+	background-color:#34495E;
+}
